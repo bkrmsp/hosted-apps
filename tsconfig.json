@@ -1,0 +1,26 @@
+{
+    "compilerOptions": {
+        "esModuleInterop": true, //SOLVES ERROR: Module can only be default-imported using the 'allowSyntheticDefaultImports' flag
+        "jsx": "react",
+        "module": "ESNext",
+        "moduleResolution": "Node",
+        "lib": [
+            "DOM",
+            "ESNext"
+        ],
+        "strict": true,
+        "sourceMap": true,
+        "target": "ESNext",
+        //ADDITIONAL
+        "outDir": "./dist", //SOLVES ERROR: CANNOT WRITE TO INPUT FILE
+        //SOLVES SOME ERROR 
+        // "typeRoots": [
+        //     "./node_modules/@types",
+        //     "./src/types"
+        // ],
+        // "allowJs": true,
+    },
+    "exclude": [
+        "node_modules"
+    ]
+}

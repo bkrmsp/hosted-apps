@@ -1,0 +1,9 @@
+
+//Mixins
+@mixin mp-margin($direction, $value) {
+    margin-#{$direction}: $value;
+}
+
+@mixin mp-padding($direction, $value) {
+    padding-#{$direction}: $value;
+}

@@ -1,0 +1,47 @@
+@import './utils.scss';
+
+.mp {
+    &-resume {
+        margin: 1rem;
+        padding: 1.5rem;
+        flex-wrap: wrap;
+        background-color: var(--mp-content-background);
+    }
+
+    &-resume-heading {
+        
+        // > div {
+            
+        // }
+        font-size: 4rem;
+            font-weight: 700;
+            padding: 1.5rem;
+    }
+
+    &-resume-content {
+        display: flex;
+        flex-direction: column;
+
+        > ul > li {
+            @include mp-margin('top', 1.5rem);
+            @include mp-margin('right', 1.5rem);
+            @include mp-margin('bottom', 1.5rem);
+        }
+    }
+
+    &-resume-download {
+        padding: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .mp {
+        &-resume-heading {
+            font-size: 3rem;
+        }
+
+        &-resume {
+            padding: 0;
+        } 
+    }
+}

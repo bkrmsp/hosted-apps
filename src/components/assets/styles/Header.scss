@@ -1,0 +1,28 @@
+.mp {
+    &-nav-item {
+        // margin-left: 1rem;
+        padding: 1.25rem;
+    }
+
+    &-nav-section {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &-heading-section {
+        justify-content: space-between;
+        padding: 1.25rem;
+        // > div {
+        //     padding: 1.5rem;
+        // }
+    }
+
+    &-header-bar {
+        // margin: 1rem;
+        // box-shadow: 2px 2px 20px 0px rgb(0 0 0 / 15%);
+        // flex-wrap: wrap;
+        // justify-content: space-between;
+        // padding: 1.5rem;
+        color: #fff;
+    }
+}

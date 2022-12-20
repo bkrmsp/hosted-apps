@@ -1,0 +1,89 @@
+@import './utils.scss';
+
+.mp {
+    &-contact {
+        margin: 1rem;
+        padding: 1.5rem;
+        flex-wrap: wrap;
+        background-color: var(--mp-content-background);
+    }
+
+    &-contact-heading {
+        padding: 1.5rem;
+    }
+
+    &-contact-content {
+        padding: 1.5rem;
+        flex-wrap: wrap;
+        // justify-content: flex-start;
+        // display: flex;
+        // flex-basis: 50%;
+    }
+
+    &-contact-icon {
+        margin: 0.5rem 1rem;
+        cursor: pointer;
+    }
+
+    &-contact-circle-icon {
+        border-radius: 50%;
+        box-sizing: content-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &-contact-rect-icon {
+        display: flex;
+        align-items: center;
+    }
+
+    &-contact-box-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &-dev-icon {
+        width: 3rem;
+        height: 2rem;
+    }
+
+    &-medium-icon {
+        width: 3rem;
+        height: 2rem;
+        border-radius: 2px;
+    }
+
+    &-mail-icon, &-call-icon {
+        height: 2.5rem;
+        width: 2.5rem;
+    }
+
+    &-gmail-icon {
+        background-color: rgb(25, 118, 210);
+        color: rgb(255, 255, 255);
+    }
+
+    &-linkedin-icon {
+        background-color: #0a66c2;
+        color: rgb(255, 255, 255);
+    }
+
+    &-whatsapp-icon {
+        background-color: #25d366;
+        color: rgb(255, 255, 255);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .mp {
+        &-contact-heading {
+            font-size: 3rem;
+        }  
+        
+        &-contact {
+            padding: 0;
+        }
+    }
+}

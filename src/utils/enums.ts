@@ -1,0 +1,13 @@
+export enum PROFILE_INFO {
+    NAME = 'NAME',
+    ADDRESS = 'ADDRESS'
+}
+
+export enum CONTACT_OPTIONS {
+    CALL = 'CALL',
+    EMAIL = 'EMAIL',
+    GITHUB = 'GITHUB',
+    LINKED_IN = 'LINKED_IN',
+    DEV_COMMUNITY = 'DEV_COMMUNITY',
+    MEDIUM = 'MEDIUM'
+}

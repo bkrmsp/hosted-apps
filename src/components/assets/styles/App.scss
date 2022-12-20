@@ -1,0 +1,63 @@
+@import './utils.scss';
+
+* {
+    box-sizing: content-box;
+}
+
+body {
+    --mp-page-background: #303f51;   // #f3f2ef;
+    --mp-content-background: #fff; //rgba(102, 51, 153, 0.6);
+    --mp-content-color: #fff;
+    //#5bb8a0
+    //≈
+    width: 100vw;
+    font-size: 16px;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+   // #f3f2ef;  //#eee;
+
+    background-color: var(--mp-page-background); 
+    overflow-x: hidden;
+}
+
+#root {
+    // margin: -8px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow-x: inherit;
+}
+
+#root > div {
+    width: 70vw;   // black;
+    
+    color: #303f51; // #fff;
+}
+
+.mp {
+    &-row {
+        display: flex;
+        flex-basis: 100%;
+    }
+
+    &-align-left {
+        justify-content: flex-end;
+    }
+
+    &-align-right {
+        justify-content: flex-start;
+    }
+
+    &-align-center {
+        justify-content: center;
+    }
+}
+
+
+
+@media screen and (max-width: 600px) {
+     #root > div {
+        width: 100vw;
+    }
+}

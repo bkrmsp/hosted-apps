@@ -1,0 +1,45 @@
+.mp {
+    &-achievements {
+        margin: 1rem;
+        padding: 1.5rem;
+        flex-wrap: wrap;
+        background-color: var(--mp-content-background);
+    }
+
+    &-achievements-heading {
+        font-size: 4rem;
+        font-weight: 700;
+        hyphens: manual;
+        padding: 1.5rem;
+    }
+
+    &-achievements-content {
+        padding: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .mp {
+        &-achievements-heading {
+            font-size: 3rem;
+        }
+
+        &-achievements {
+            padding: 0;
+        }
+    }
+
+    .MuiTimelineItem-root:before {
+        flex: unset !important;
+        -webkit-flex: unset !important;
+        padding: 0px !important;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 900px) {
+    .MuiTimelineItem-root:before {
+        flex: unset !important;
+        -webkit-flex: unset !important;
+        padding: 0px !important;
+    }
+}

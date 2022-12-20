@@ -1,0 +1,116 @@
+@import './utils.scss';
+
+.mp {
+    &-about {
+        margin: 1rem;
+        padding: 1.5rem;
+        justify-content: space-around;
+        align-items: center;
+            background-color: var(--mp-content-background);
+        // min-height: 775px;
+
+    }
+
+    &-about-description {
+        padding: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        // @include mp-margin('left', 1rem);
+    }
+
+    // &-about-desc-header {
+    //     font-size: 4rem;
+    //     // @include mp-margin('top', 5rem);
+    //     font-weight: 700;
+    // }
+
+    &-about-desc-content  {
+        @include mp-margin('top', 0.5rem);
+
+        > ul > li {
+            // @include mp-margin('top', 1.5rem);
+            @include mp-margin('right', 1.5rem);
+            @include mp-margin('bottom', 1.5rem);
+        }
+    }
+
+    &-profile-pic {
+        display: flex;
+        justify-content: center;
+        margin: 1.5rem;
+        border: 1.5rem solid #fff;
+        // background-image: url('../../../../public/assets/images/bg_1.jpeg');  // #ccc;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .mp {
+        &-about {
+            flex-wrap: wrap;
+            padding: 0;
+        }
+
+        &-profile-pic {
+            height: 300px;
+        }
+
+        &-about-desc-header {
+            font-size: 3rem;
+            @include mp-margin('top', 3rem);
+            text-align: center;
+        }
+
+        &-about-desc-content  {
+            @include mp-margin('top', 2rem);
+
+            > ul > li {
+                @include mp-margin('top', 1.5rem);
+                @include mp-margin('right', 1.5rem);
+                @include mp-margin('bottom', 1.5rem);
+            }
+        }
+
+        &-about-content {
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 900px) {
+    .mp {
+        &-about-content {
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        &-profile-pic {
+            height: 300px;
+        }
+    }
+}
+
+@media screen and (min-width: 901px) and (max-width: 1200px) {
+    .mp {
+        &-about-content {
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        &-profile-pic {
+            height: 300px;
+        }
+    }
+}
+
+@media screen and (min-width: 1201px) and (max-width: 1536px) {
+    .mp {
+        &-about-content {
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+    }
+}
+
